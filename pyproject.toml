@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools >= 61.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bhtp-docs"
+version = "0.0.1"
+description = "Documentation for BHTP Tools"
+readme = "README.md"
+authors = [
+    {name = "PoivronJaune", email="poivronjaune@gmail.com"}
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10"
+]
+dependencies = [
+]
+requires-python = ">3.10"
+
+[project.optional-dependencies]
+build = ["build","twine"]
+dev = ["sphinx", "sphinx-autodoc-typehints", "sphinx-rtd-theme"]
