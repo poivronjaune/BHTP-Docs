@@ -7,8 +7,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'BHTP'
-copyright = '2024, PoivroNJaune'
-author = 'PoivroNJaune'
+copyright = '2024, PoivronJaune'
+author = 'PoivronJaune'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -16,7 +16,8 @@ author = 'PoivroNJaune'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
-    'sphinx.ext.napoleon'
+    'sphinx.ext.napoleon',
+    'sphinx.ext.intersphinx'
 ]
 
 templates_path = ['_templates']
@@ -28,4 +29,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_rtd_theme'
+
+# Disable the "View source" link
+html_show_sourcelink = False
+
 html_static_path = ['_static']
+

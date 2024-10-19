@@ -1,3 +1,4 @@
+git+https://github.com/poivronjaune/BHTP-Tools.git
 sphinx
 sphinx-autodoc-typehints
 sphinx-rtd-theme
